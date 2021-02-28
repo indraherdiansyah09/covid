@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Http;
+// use Illuminate\Support\Facades\Http;
 use App\Models\Provinsi;
 use App\Models\Kota;
 use App\Models\Kecamatan;
@@ -29,10 +29,10 @@ class FrontendController extends Controller
               ->join('trackings','rws.id','=','trackings.id_rw')               
               ->groupBy('provinsis.id')->get();
 
-            $global = file_get_contents('https://api.kawalcorona.com/positif');
-            $posglobal = json_decode($global, TRUE);         
-            $datadunia= file_get_contents("https://api.kawalcorona.com/");
-            $dunia = json_decode($datadunia, TRUE);
+            // $global = file_get_contents('https://api.kawalcorona.com/positif');
+            // $posglobal = json_decode($global, TRUE);         
+            // $datadunia= file_get_contents("https://api.kawalcorona.com/");
+            // $dunia = json_decode($datadunia, TRUE);
 
         $positif = DB::table('rws')
               ->select('trackings.positif',
@@ -50,7 +50,8 @@ class FrontendController extends Controller
               ->join('trackings','rws.id','=','trackings.id_rw')
               ->sum('trackings.meninggal');
           
-        return view('frontend.index', compact('positif','sembuh','meninggal','posglobal','provinsi','dunia'));
+      //   return view('frontend.index', compact('positif','sembuh','meninggal','posglobal','provinsi','dunia'));
+        return view('frontend.index', compact('positif','sembuh','meninggal','provinsi'));
 
     }
 }

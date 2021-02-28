@@ -47,7 +47,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 use App\Http\Controllers\FrontendController;
-Route::resource('index', FrontendController::class);
+Route::resource('/',FrontendController::class);
 
 Route::get('admin',function(){
     return view('halo');
