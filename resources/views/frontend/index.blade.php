@@ -59,7 +59,7 @@
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="background: url(frontend/img/slide/slide-1.jpg)">
+          <div class="carousel-item active" style="background: url(frontend/img/slide/19.png)">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">TRACKING <span>COVID-19</span></h2>
@@ -76,7 +76,7 @@
     <section id="featured" class="featured">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="icon-box">
             <i class="bi bi-bar-chart"></i>
             <h3><a href="">Total Positif</a></h3>
@@ -84,7 +84,7 @@
             <p>ORANG</p>
             </div>
           </div>
-          <div class="col-lg-3 mt-3 mt-lg-0">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="icon-box">
              <i class="bi bi-bar-chart"></i>
              <h3><a href="">Total Sembuh</a></h3>
@@ -92,7 +92,7 @@
              <p>ORANG</p>
             </div>
           </div>
-          <div class="col-lg-3 mt-3 mt-lg-0">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="icon-box">
              <i class="bi bi-bar-chart"></i>
              <h3><a href="">Total Meninggal</a></h3>
@@ -100,13 +100,13 @@
              <p>ORANG</p>
             </div>
           </div>
-          <div class="col-lg-3 mt-3 mt-lg-0">
+          <!-- <div class="col-lg-3 mt-3 mt-lg-0">
             <div class="icon-box">
              <i class="bi bi-bar-chart"></i>
              <h3><a href="">Positif Indonesia</a></h3>
              <p>ORANG</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
